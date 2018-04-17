@@ -1,0 +1,41 @@
+.posts, .activism-pages, .gemployees {
+  margin-top: $tabbar-height;
+
+  .tabbar {
+    background: trasparent;
+    position: fixed;
+    width: 100%;
+    top: $header-height;
+    z-index: $zindex-tabbar;
+  }
+
+  .tab {
+    background: $tabbar-bg;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    color: $tab-color;
+    cursor: pointer;
+    display: inline-block;
+    font-size: $tabbar-font-size;
+    font-weight: 600;
+    height: $tabbar-height;
+    text-align: center;
+    white-space: pre;
+    @media(max-width: 998px) {
+      font-size:  $tabbar-font-size * 0.9;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 110%;
+  }
+
+  .tab.active {
+    border-bottom: 6px solid white;
+    color: $tab-active-color;
+  }
+
+  .tab:hover {
+    border-bottom: 6px solid lighten($header-bg, 10%);
+  }
+}

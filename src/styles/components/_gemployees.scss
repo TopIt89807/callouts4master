@@ -1,0 +1,67 @@
+.gemployees {
+  background: $gemployees-container-bg;
+  padding-bottom: 10px;
+  border: $gemployees-container-border;
+
+  .gemployee-block {
+    background: #fff;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+
+    &:hover {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .gemployee-block__name {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .gemployee-block__description {
+    color: #999;
+  }
+
+  .gemployee-block__count {
+    color: #333;
+  }
+}
+
+.gemployee-page {
+  border: $gemployee-page-borders;
+  background-color: $gemployee-page-bg;
+  padding: $gemployee-page-padding;
+  box-shadow: $gemployee-page-shadow;
+}
+
+.gemployee-page__title {
+  font-size: 32px;
+}
+
+.gemployee-page__image {
+  text-align: center;
+}
+
+.gemployee-page__info {
+  font-size: 16px;
+  font-weight: 500;
+
+  span {
+    color: #555;
+  }
+}
+
+.gemployee-page__comments {
+  background: $bg-secondary;
+  // box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+  border: 1px solid $bg-third;
+}
+
+.gemployee-page__comments-title {
+  background: $bg-third;
+  color: $text-secondary;
+  font-size: 20px;
+}

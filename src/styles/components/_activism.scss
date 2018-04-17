@@ -1,0 +1,110 @@
+.activism-pages {
+  background: $activism-pages-container-bg;
+  padding-bottom: 10px;
+  border: $activism-pages-container-border;
+  box-sizing: border-box;
+
+  .page-block {
+    cursor: pointer;
+    // max-width: $activism-page-block-max-width;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .page-title {
+    }
+
+    .page-tier {
+      color: #666;
+    }
+
+    .page-description {
+      white-space: pre-line;
+    }
+
+    .page-image {
+      padding: 1px;
+      width: 64px;
+      height: 48px;
+      object-fit: cover;
+    }
+
+    .thumb-image {
+      width: 36px;
+      height: auto;
+    }
+  }
+}
+
+.activism-page {
+  border: $activism-page-borders;
+  background-color: $activism-page-bg;
+  padding: $activism-page-padding;
+  box-shadow: $activism-page-shadow;
+  // max-width: $activism-page-block-max-width;
+
+  .page-title {
+    font-size: 32px;
+  }
+
+  .image-container {
+    background: #f8f8f8;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+  }
+
+  .content-container {
+    overflow-y: scroll;
+    word-wrap: break-word;
+    white-space: pre-line;
+
+    @include media-breakpoint-up(lg) {
+      min-height: 200px;
+    }
+  }
+
+  .activity-container {
+    // box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+    background: $bg-secondary;
+    border: 1px solid $bg-third;
+    color: $text-third;
+
+    .container-title {
+      background-color: $bg-third;
+      color: $text-secondary;
+    }
+  }
+
+  .inform-container {
+    color: $text-third;
+
+    input {
+      border-radius: 0;
+      border: none;
+      border-bottom: 2px solid $gray-dark;
+      display: inline-block;
+      width: 100%;
+      padding: 3px 3px;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: $bg-third;
+      outline: none;
+    }
+  }
+
+  .comments-container {
+    background: $bg-secondary;
+    // box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+    border: 1px solid $bg-third;
+
+    .comments-title {
+      background: $bg-third;
+      color: $text-secondary;
+      font-size: 20px;
+    }
+  }
+}

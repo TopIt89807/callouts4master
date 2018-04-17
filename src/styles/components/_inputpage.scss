@@ -1,0 +1,49 @@
+.inputpage {
+  border: $inputpage-borders;
+  background-color: $inputpage-bg;
+  padding: $inputpage-padding-y $inputpage-padding-x;
+  box-shadow: $inputpage-box-shadow;
+  position: relative;
+
+  .inputpage-title {
+    color: $inputpage-title-color;
+    font-size: $inputpage-title-font-size;
+  }
+
+  .description {
+    font-size: $inputpage-title-font-size * 0.5;
+    text-align: justify;
+  }
+
+  .form {
+    margin: 0 15px
+
+    label {
+      text-align: right;
+    }
+
+    input, select, textarea {
+      border-radius: 0;
+      // border-width: 1.5px;
+      display: inline-block;
+      // font-size: 18px
+      // padding: 5px 16px
+    }
+
+    .avatar {
+      width: 160px;
+      height: 160px;
+      min-width: 160px;
+      min-height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .preview-image {
+      background: rgba(0, 0, 0, .1);
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

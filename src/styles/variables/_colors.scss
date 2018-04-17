@@ -1,0 +1,66 @@
+$brand-primary: #02447b;
+$bg-primary: #02447b;
+$bg-secondary: #fff;
+$bg-third: #02b2fb;
+
+$app-bg: #f5f8fa;
+$card-bg: #fff;
+
+$text-primary: #292b2c;
+$text-secondary: #fff;
+$text-third: #666;
+$text-fourth: #02b2fb;
+
+$gray-dark:                 #666;
+$gray-light:                #BCC5D0;
+$gray-lighter:              #E3E8EC;
+$gray-lightest:             #F1F3F8;
+
+$text-muted: $gray-light !default;
+
+$header-bg: $bg-primary;
+$header-text-color: $text-secondary;
+$brand-text-color: $text-secondary;
+
+$dropdown-border-color:         $gray-lighter;
+$dropdown-divider-bg:           $gray-lightest;
+
+
+// Side Bar
+$sidebar-color: $text-primary;
+$sidebar-bg: $app-bg;
+$sidebar-header-bg: rgba(0, 0, 0, .2);
+$sidebar-footer-bg: rgba(0, 0, 0, .2);
+
+$sidebar-nav-color:                 $text-primary;
+$sidebar-nav-title-color:           $gray-lighter;
+
+$sidebar-nav-link-color: $text-primary;
+$sidebar-nav-link-bg: transparent;
+$sidebar-nav-link-icon-color: $text-muted;
+
+$sidebar-nav-link-hover-color:      #fff;
+$sidebar-nav-link-hover-bg:         $brand-primary;
+$sidebar-nav-link-hover-icon-color: #fff !important;
+
+$sidebar-nav-link-active-color:     #fff;
+$sidebar-nav-link-active-bg:        lighten($sidebar-bg, 5%);
+$sidebar-nav-link-active-icon-color: $brand-primary;
+
+$inputpage-bg: $card-bg;
+$inputpage-title-color: lighten($text-primary, 10%);
+
+$tabbar-bg: #3c83c3;
+$tab-color: $text-secondary;
+$tab-active-color: $text-secondary;
+
+$posts-container-bg: #fff;
+$activism-pages-container-bg: #fff;
+
+$activism-page-bg: #fff;
+$post-bg: #fff;
+
+$officials-container-bg: #fff;
+
+$gemployees-container-bg: #fff;
+$gemployee-page-bg: #fff;
