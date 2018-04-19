@@ -6,7 +6,7 @@ import { requestCreator, successCreator, failureCreator } from 'utils/action'
 function* followAdd(action) {
   try {
     yield put(requestCreator(Types.FOLLOW_ADD))
-    const res = yield select(state => state.get('user'));
+    const res = yield select(state => state.user);
     const token = res.result.token;
     const follower = res.result.user.id;
     const result = yield call(services.followAdd, follower, action.following, token)
@@ -22,7 +22,7 @@ function* followAdd(action) {
 function* followCheck(action) {
   try {
     yield put(requestCreator(Types.FOLLOW_CHECK))
-    const res = yield select(state => state.get('user'));
+    const res = yield select(state => state.user);
     const token = res.result.token;
     const follower = res.result.user.id;
     const result = yield call(services.check, follower, action.following, token)
@@ -38,7 +38,7 @@ function* followCheck(action) {
 function* getFollowings(action) {
   try {
     yield put(requestCreator(Types.GET_FOLLOWINGS))
-    const res = yield select(state => state.get('user'));
+    const res = yield select(state => state.user);
     const token = res.result.token;
     const follower = res.result.user.id;
     const result = yield call(services.getFollowings, follower, token)

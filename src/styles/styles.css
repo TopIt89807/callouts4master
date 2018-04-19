@@ -6703,18 +6703,20 @@ hr {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box; }
   .activism-pages .page-block {
-    cursor: pointer;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
     .activism-pages .page-block:hover {
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+    .activism-pages .page-block .align-center {
+      display: flex;
+      justify-content: center; }
     .activism-pages .page-block .page-tier {
       color: #666; }
     .activism-pages .page-block .page-description {
       white-space: pre-line; }
     .activism-pages .page-block .page-image {
       padding: 1px;
-      width: 64px;
-      height: 48px;
+      width: 400px;
+      height: 300px;
       object-fit: cover; }
     .activism-pages .page-block .thumb-image {
       width: 36px;

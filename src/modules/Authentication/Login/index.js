@@ -42,7 +42,7 @@ class Login extends Component {
     componentWillReceiveProps({ global, user }) {
       if (global.status.effects[Types.SIGN_IN] === 'success'
           && this.props.global.status.effects[Types.SIGN_IN] === 'request') {
-          this.props.changeLocation(`/auth/signup`)
+          this.props.changeLocation(`/master`)
       }
     }
 

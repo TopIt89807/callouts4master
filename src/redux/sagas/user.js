@@ -35,7 +35,7 @@ function* signUp(action) {
 function* getUsers(action) {
   try {
     yield put(requestCreator(Types.GET_USERS))
-    const res = yield select(state => state.get('user'));
+    const res = yield select(state => state.user);
     const follower = res.result.user.id;
     const token = res.result.token;
     const result = yield call(services.getUsers, action.user_type, follower, token);

@@ -6,7 +6,7 @@ import { requestCreator, successCreator, failureCreator } from 'utils/action'
 function* addPost(action) {
   try {
     yield put(requestCreator(Types.ADD_POST))
-    const res = yield select(state => state.get('user'));
+    const res = yield select(state => state.user);
     const token = res.result.token;
     const result = yield call(services.addPost, action.master, action.text, action.image, action.thumb_img, token)
     if(result.status == 200)
@@ -21,7 +21,7 @@ function* addPost(action) {
 function* updatePost(action) {
     try {
       yield put(requestCreator(Types.UPDATE_POST))
-      const res = yield select(state => state.get('user'));
+      const res = yield select(state => state.user);
       const token = res.result.token;
       const result = yield call(services.updatePost, action.id, action.master, action.text, action.image, action.thumb_img, token)
       if(result.status == 200)
@@ -36,7 +36,7 @@ function* updatePost(action) {
 function* deletePost(action) {
   try {
     yield put(requestCreator(Types.DELETE_POST))
-    const res = yield select(state => state.get('user'));
+    const res = yield select(state => state.user);
     const token = res.result.token;
     const result = yield call(services.deletePost, action.id, token)
     if(result.status == 200)
@@ -51,7 +51,7 @@ function* deletePost(action) {
 function* getPosts(action) {
   try {
     yield put(requestCreator(Types.GET_POSTS))
-    const res = yield select(state => state.get('user'));
+    const res = yield select(state => state.user);
     const token = res.result.token;
     const result = yield call(services.getPosts, action.master, token)
     if(result.status == 200)
@@ -66,7 +66,7 @@ function* getPosts(action) {
 function* getAll(action) {
   try {
     yield put(requestCreator(Types.GET_ALL))
-    const res = yield select(state => state.get('user'));
+    const res = yield select(state => state.user);
     const follower = res.result.user.id;
     const token = res.result.token;
     const result = yield call(services.getAll, follower, token)
