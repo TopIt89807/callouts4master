@@ -12,6 +12,10 @@
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     }
 
+    .danger {
+      background-color: #dc3545;
+    }
+
     .align-center {
       display: flex;
       justify-content: center;
@@ -39,6 +43,10 @@
       width: 36px;
       height: auto;
     }
+  }
+
+  .inline-block {
+    display: inline-block;
   }
 }
 

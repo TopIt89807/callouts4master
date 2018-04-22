@@ -6706,6 +6706,8 @@ hr {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
     .activism-pages .page-block:hover {
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+    .activism-pages .page-block .danger {
+      background-color: #dc3545; }
     .activism-pages .page-block .align-center {
       display: flex;
       justify-content: center; }
@@ -6721,6 +6723,8 @@ hr {
     .activism-pages .page-block .thumb-image {
       width: 36px;
       height: auto; }
+  .activism-pages .inline-block {
+    display: inline-block; }
 
 .activism-page {
   border: none;

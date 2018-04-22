@@ -9,6 +9,7 @@ import Header from './components/Header'
 const AsyncLogin = asyncComponent(() => import('../Authentication/Login'))
 const AsyncSignUp = asyncComponent(() => import('../Authentication/Signup'))
 const AsyncMaster = asyncComponent(() => import('../Master'))
+const AsyncPost = asyncComponent(() => import('../Master/Post'))
 
 class App extends Component {
     componentDidMount() {
@@ -33,6 +34,7 @@ class App extends Component {
                                     <Route exact path="/auth/signup" component={ AsyncSignUp } />
                                     {this.props.user.result.status != 200 && <Redirect to='/auth/login' />}
                                     <Route exact path="/master" component={ AsyncMaster } />
+                                    <Route exact path="/master/post" component={ AsyncPost } />
                                 </Switch>
                             </div>
                         </div>
